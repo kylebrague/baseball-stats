@@ -3,5 +3,8 @@
   "dependencies": {
     "sst": "3.4.22",
     "svelte-kit-sst": "2.43.5"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "1.9.4"
   }
 }
