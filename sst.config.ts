@@ -10,6 +10,11 @@ export default $config({
     };
   },
   async run() {
-    new sst.aws.SvelteKit("MyWeb");
+    const bucket = new sst.aws.Bucket("baseball-stats-bucket", {
+      access: "public",
+    });
+    new sst.aws.SvelteKit("baseball-stats-web", {
+      link: [bucket],
+    });
   },
 });
